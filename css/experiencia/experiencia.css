@@ -1,0 +1,152 @@
+/**********  Experiencia ***********/
+
+.experiencia {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.experiencia h2 {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.experiencia__items {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ----  Item derecho ---- */
+
+.exp__item__derecho {
+    height: 406px;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.exp__item__derecho__img {
+    width: 60%;
+}
+
+.exp__item__derecho__img img{width: 100%;}
+
+
+.exp__item__derecho__info {
+    margin-left: 5%;
+    width: 35%;
+}
+
+.exp__item__derecho__titulo {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.exp__item__derecho__descripcion {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.btn__repo {
+    background: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #2A7AE4;
+    height: 55px;
+    width: 100px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.btn__repo:hover {background: rgba(0, 114, 255, 0.6);
+color: #ffffff;}
+
+.btn__demo {
+    background: #2A7AE4;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    height: 55px;
+    width: 100px;
+    cursor: pointer;
+}
+
+.btn__demo:hover {background: rgba(0, 114, 255, 0.6);
+    color: #ffffff;}
+
+/* ----  Item izquierdo ---- */
+
+.exp__item__izquierdo {
+    margin-top: 20px;
+    height: 406px;
+    display: flex;
+    align-items: center;
+}
+
+.exp__item__izquierdo__info {
+    
+    width: 35%;
+}
+.exp__item__izquierdo__img {
+    width: 60%;
+}
+
+.exp__item__izquierdo__img img{width: 100%;}
+
+.exp__item__izquierdo__titulo {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.exp__item__izquierdo__descripcion {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+    /*item derecho*/
+    .experiencia {width: 100%;}
+    .experiencia h2 {font-size: 22px;}
+    .experiencia__items {width: 100%;}
+    
+    .exp__item__derecho {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;}
+    .exp__item__derecho__img {
+        margin: 0 auto;
+        width: 90%; }
+    .exp__item__derecho__titulo {margin-top: 0; font-size: 16px;}
+    .exp__item__derecho__descripcion{font-size: 14px;}
+    
+    /*item izquierdo*/
+
+    .exp__item__izquierdo { width:100%;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;}
+
+    .exp__item__izquierdo__info {order: 2;margin-left: 5%;}
+    .exp__item__izquierdo__img {
+        order: 1;
+        margin: 0 auto;
+        width: 90%;}
+    .exp__item__izquierdo__titulo{margin-top: 0; font-size: 16px;}
+    .exp__item__izquierdo__descripcion{font-size: 14px;}
+}
+
+@media screen and (max-width: 376px) {
+    .exp__item__derecho__botones {display: flex;}
+    .exp__item__izquierdo__botones {display: flex;}
+    .btn__repo {height: 40px;}
+    .btn__demo {height: 40px;}
+}

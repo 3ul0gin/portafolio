@@ -1,0 +1,33 @@
+/* Sobre mi */
+.sobremi{
+    margin: 0 auto;
+    width: 80%;
+    height: 255px;
+}
+
+.sobremi_container {
+    width: 70%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .sobremi {display: flex;
+        justify-content: center;
+        width: 100%; height: auto;
+        background-color: #EAF2FD;}
+
+    .sobremi_container {
+        width: 95%; margin: 25px;
+    }
+
+    .sobremi_container h2 {font-size: 22px;}
+    .sobremi_container p {font-size: 14px; text-align: justify;}
+}
+
+@media screen and (max-width: 376px) {
+    
+    .sobremi_container {
+        width: 95%; margin: 0;
+    }
+    
+}

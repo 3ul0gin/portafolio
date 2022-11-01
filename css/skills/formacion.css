@@ -1,0 +1,69 @@
+/*Formación Academica*/
+.formacion{
+    background: #EAF2FD;
+    width: 100%;
+}
+
+.formacion__titulo{
+    font-size: 32px;
+    font-weight: 700;
+    padding-top: 20px;
+    text-align: center;
+    
+}
+
+.formacion__escuelas{
+    
+    display: flex;
+    justify-content: space-between;
+    height: 347px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.formacion__escuelas_card {
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.formacion__escuelas__card__imagen {background: #fff;
+    width: 368px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formacion__escuelas__card__imagen img {width: 40%;}
+
+.formacion__escuelas__especialidad {
+    font-size: 22px;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.formacion__escuelas__anio {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 1px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .formacion{ width: 100%;}
+    .formacion__titulo {font-size: 22px; padding-top:0;}
+    .formacion__escuelas{width: 90%; height: auto;}
+    .formacion__escuelas_card {height: 250px; margin-right: 10px; }
+    .formacion__escuelas__card__imagen {width: 224px;}
+    .formacion__escuelas__anio {font-size: 14px;}  
+}
+
+@media screen and (max-width: 376px) {
+    .formacion__escuelas{display: flex;flex-direction: column;}
+    .formacion__escuelas__card__imagen {width: 100%;}
+    .formacion__escuelas__especialidad{font-size: 16px;}
+}

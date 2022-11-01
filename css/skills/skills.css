@@ -1,0 +1,65 @@
+/* Skills y hobbies*/
+.cualidades{
+margin-top: 80px;
+ }
+
+ .skills{
+    margin: 0 auto;
+    width: 80%;
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .skills h2 {
+    text-align: center;
+}
+
+.skills__items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.skills__card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: #ffffff;
+    width: 176px;
+    height:154px;
+    padding-left: 10px;        
+}
+
+.skills__card:hover {
+    border:3px solid #2A7AE4;
+}
+
+.skills__info {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .cualidades{
+        margin-top:10px; 
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;    
+    }
+
+    .skills{height:auto; width: 90%;}
+
+    .skills h2{font-size: 22px;}
+
+    .skills__card {margin-bottom: 20px;}
+    
+}
+
+@media screen and (max-width: 376px) {
+    .cualidades{margin-top: 0;}
+    .skills__card {width: 140px;height:118px;}
+    
+}
